@@ -1,0 +1,132 @@
+:root {
+  --primary: #265073;
+  --light: #eee;
+}
+.video_over {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+.video_over video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+.video_over .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.result .title h1 {
+  width: fit-content;
+  margin: 2rem auto;
+  color: var(--light);
+  font-size: 27px;
+  position: relative;
+}
+.result .title h1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--light);
+  bottom: -5px;
+}
+.result .title lord-icon {
+  width: 30px;
+  height: 45px;
+  position: absolute;
+}
+.result .details{
+  display: flex;
+  justify-content: space-between;
+}
+.result h6 {
+  color: var(--light);
+}
+.result .card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.result form .card :is(.card-header, .card-title) {
+  color: var(--light);
+}
+.result form .card .card-title {
+  padding-bottom: 20px;
+}
+.result form .action {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.result form .action h6 {
+  padding: 6px;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--light);
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.result form .action h6:nth-child(1) {
+  background-color: rgb(0 255 0 / 28%);
+}
+.result form .action h6:nth-child(2) {
+  background-color: rgb(136 50 50);
+}
+.result .send {
+  margin-bottom: 40px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--light);
+  color: var(--light);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 5px;
+  transition: 0.3s ease-in-out;
+}
+.result .send:hover {
+  background-color: var(--primary);
+}
+.result .more .title_more {
+  position: relative;
+}
+.result .more .title_more h1 {
+  color: var(--light);
+  font-size: 27px;
+  position: relative;
+  width: fit-content;
+}
+.result .more .title_more h1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--light);
+  bottom: 0;
+}
+.result .more {
+  width: 100%;
+}
+.result .more .title_more{
+  margin-top: 20px;
+}
+.result .more .title_more h1 {
+  width: fit-content;
+}
+.result .more li{
+  list-style: none;
+  color: var(--light);
+}

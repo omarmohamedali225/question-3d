@@ -1,0 +1,58 @@
+:root {
+  --primary: #265073;
+  --light: #eee;
+}
+.auth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth .card {
+  width: 100%;
+  max-width: 400px;
+  color: var(--light);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.auth .card-header lord-icon {
+  width: 30px;
+  height: 45px;
+  position: absolute;
+}
+.auth input {
+  border: 1px solid;
+}
+.auth .form-text{
+  color: var(--light);
+}
+.auth a {
+  text-decoration: none;
+  color: var(--light);
+}
+.auth a:hover {
+  text-decoration: underline;
+}
+.auth .password {
+  position: relative;
+}
+.auth .password i {
+  position: absolute;
+  top: 43px;
+  left: 6px;
+  cursor: pointer;
+}
+.auth .send {
+  min-width: 100px;
+  padding: 4px 8px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.auth .send:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}

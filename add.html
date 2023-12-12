@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أضافة الأسأله</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/addQuestion.css" />
+  </head>
+  <body>
+    <div class="video_over">
+      <video src="./assets/background.mp4" autoplay loop muted></video>
+      <div class="overlay"></div>
+    </div>
+    <div class="container add">
+      <div class="menu">
+        <lord-icon src="https://cdn.lordicon.com/lakxizal.json" trigger="hover">
+        </lord-icon>
+        <ul>
+          <li>اهلا <span class="fs-5 fw-bold"> omar </span></li>
+          <li><a href="result.html">النتائج</a></li>
+          <li><a href="add.html">أضافة سؤال</a></li>
+          <li><a href="control.html">لوحة التحكم</a></li>
+          <li><a href="logout.php?id=1">تسجيل الخروج</a></li>
+        </ul>
+      </div>
+      <div class="title">
+        <h1>
+          أضافة الأسالة للأستبيان
+          <lord-icon
+            src="https://cdn.lordicon.com/rzbxngpa.json"
+            trigger="loop"
+            delay="1000"
+            stroke="bold"
+          >
+          </lord-icon>
+        </h1>
+      </div>
+      <form action="" method="post">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >السؤال المقترح</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="اكتب هنا....."
+            name="question"
+          ></textarea>
+        </div>
+        <button class="send" type="submit" name="send">
+          <lord-icon
+            src="https://cdn.lordicon.com/ukwexxlc.json"
+            trigger="hover"
+            target=".send"
+          >
+          </lord-icon>
+          ابعت سؤالك
+        </button>
+      </form>
+      <div class="more">
+        <div class="title_more">
+          <h1>ملاحظات هامة</h1>
+        </div>
+        <ul>
+          <li>1_عدد الأسالة المتواجدة حاليا <span>5</span> اسألة</li>
+          <li>2_العدد المسموح بارسالة <span>10</span> اسألة فقط لا غير</li>
+          <li>
+            3_قم بتصفح صفحة الادارة لتتحكم في الأسأله يمكنك حذفها او التعديل
+            عليها
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/icons.js"></script>
+  </body>
+</html>

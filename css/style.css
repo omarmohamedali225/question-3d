@@ -1,0 +1,40 @@
+:root {
+  --primary: #265073;
+  --light: #eee;
+}
+/* global */
+.wellcome{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light);
+}
+lord-icon{
+  width: 200px;
+  height: 200px;
+}
+.wellcome h1{
+  font-size: 1.4rem;
+  text-align: center;
+}
+a {
+  min-width: 100px;
+  padding: 4px 8px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid var(--light);
+  color: var(--light);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
